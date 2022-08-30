@@ -15,8 +15,6 @@ if(sum(as.numeric(!pacotes2 %in% installed.packages())) != 0){
   sapply(pacotes2, require, character = T) 
 }
 
-#Definindo o diretório dos dados
-setwd("/Users/rodrigonapoli/Documents/Cientista de dados/Estágio Hilab/testes/analise")
 dataset <- read.csv(file="dataset_hilab.csv")
 dataset$X <- NULL
 
